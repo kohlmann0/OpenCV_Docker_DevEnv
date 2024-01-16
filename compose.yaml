@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: openCV-devContainer
+    devices:
+      - /dev/video0:/dev/video0
+    volumes:
+      - .:/src
+
